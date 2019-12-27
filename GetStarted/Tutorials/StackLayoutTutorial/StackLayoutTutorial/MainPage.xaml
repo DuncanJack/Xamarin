@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="StackLayoutTutorial.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="A" Clicked="ToolbarItemA_Clicked"/>
+        <ToolbarItem Text="B" Clicked="ToolbarItemB_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Margin="20,35,20,25"
+                 Orientation="Horizontal">
+        <Label Text="The StackLayout has its Margin property set, to control the rendering position of the StackLayout."/>
+        <Label Text="The Padding property can be set to specify the distance between the StackLayout and its children."/>
+        <Label Text="The Spacing property can be set to sepcify the distance between views in teh StackLayout."/>
     </StackLayout>
 </ContentPage>

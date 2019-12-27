@@ -17,5 +17,15 @@ namespace StackLayoutTutorial
         {
             InitializeComponent();
         }
+
+        async void ToolbarItemA_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new A());
+        }
+
+        async void ToolbarItemB_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new B());
+        }
     }
 }
