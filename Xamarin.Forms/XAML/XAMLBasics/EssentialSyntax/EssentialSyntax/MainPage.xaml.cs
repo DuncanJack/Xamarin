@@ -22,5 +22,15 @@ namespace EssentialSyntax
         {
             await Navigation.PushAsync(new PropertyElements());
         }
+
+        async void AttachedPropertiesButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new AttachedProperties());
+        }
+
+        async void AttachedProperties2Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new AttachedProperties2());
+        }
     }
 }
