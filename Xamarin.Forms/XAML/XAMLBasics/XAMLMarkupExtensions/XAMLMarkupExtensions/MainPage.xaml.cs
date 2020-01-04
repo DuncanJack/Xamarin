@@ -17,5 +17,20 @@ namespace XAMLMarkupExtensions
         {
             InitializeComponent();
         }
+
+        async void SharedResourcesButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new SharedResources());
+        }
+
+        async void StaticMarkupExtensionButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new StaticMarkupExtension());
+        }
+
+        async void ConstraintExpressionMarkupExtensionButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ConstraintExpressionMarkupExtension());
+        }
     }
 }
