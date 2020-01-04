@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EssentialSyntax.PlatformDifferences">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,20,0,0"/>
+            <On Platform="Android" Value="0,0,0,0"/>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color">
+            <On Platform="iOS" Value="Red"/>
+            <On Platform="Android" Value="Blue"/>
+        </OnPlatform>
+    </ContentPage.BackgroundColor>
+
+    <ContentPage.Content>
+        <Label Text="My Label" VerticalOptions="Start"/>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,5 +4,7 @@
         <Button Text="Property Elements" Clicked="PropertyElementsButton_Clicked"/>
         <Button Text="Attached Properties" Clicked="AttachedPropertiesButton_Clicked"/>
         <Button Text="Attached Properties 2" Clicked="AttachedProperties2Button_Clicked"/>
+        <Button Text="Content Properties" Clicked="ContentPropertiesButton_Clicked"/>
+        <Button Text="Platform Differences" Clicked="PlatformDifferencesButton_Clicked"/>
     </StackLayout>
 </ContentPage>

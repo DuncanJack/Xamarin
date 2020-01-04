@@ -32,5 +32,15 @@ namespace EssentialSyntax
         {
             await Navigation.PushAsync(new AttachedProperties2());
         }
+
+        async void ContentPropertiesButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ContentProperties());
+        }
+
+        async void PlatformDifferencesButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new PlatformDifferences());
+        }
     }
 }
