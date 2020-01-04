@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EssentialSyntax.PropertyElements">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Label Text="Hello, XAML!"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Aqua" />
+
+            <Label Text="Hello XAML!"
+                   FontAttributes="Bold"
+                   FontSize="Large">
+                <Label.VerticalOptions>
+                    <LayoutOptions Alignment="Center"/>
+                </Label.VerticalOptions>
+                <Label.TextColor>
+                    Aqua
+                </Label.TextColor>
+            </Label>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
