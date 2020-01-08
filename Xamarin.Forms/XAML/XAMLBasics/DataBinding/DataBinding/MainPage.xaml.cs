@@ -22,5 +22,10 @@ namespace DataBinding
         {
             await Navigation.PushAsync(new ViewToViewBindings());
         }
+
+        async void BindingModeButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new BindingMode());
+        }
     }
 }
