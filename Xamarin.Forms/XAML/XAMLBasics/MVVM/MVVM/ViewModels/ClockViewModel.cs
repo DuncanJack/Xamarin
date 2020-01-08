@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 
-namespace MVVM
+namespace MVVM.ViewModels
 {
     public class ClockViewModel : INotifyPropertyChanged
     {

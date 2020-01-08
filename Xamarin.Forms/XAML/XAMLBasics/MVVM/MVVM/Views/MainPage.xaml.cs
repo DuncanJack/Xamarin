@@ -27,5 +27,10 @@ namespace MVVM
         {
             await Navigation.PushAsync(new ASimpleProgramWithAViewModel());
         }
+
+        async void InteractiveMVVMButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new InteractiveMVVM());
+        }
     }
 }

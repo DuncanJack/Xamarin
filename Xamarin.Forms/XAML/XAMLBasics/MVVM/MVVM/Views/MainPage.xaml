@@ -3,5 +3,6 @@
     <StackLayout>
         <Button Text="A Simple Program Without A ViewModel" Clicked="ASimpleProgramWithoutAViewModelButton_Clicked"/>
         <Button Text="A Simple Program With A ViewModel" Clicked="ASimpleProgramWithAViewModelButton_Clicked"/>
+        <Button Text="Interactive MVVM" Clicked="InteractiveMVVMButton_Clicked"/>
     </StackLayout>
 </ContentPage>
