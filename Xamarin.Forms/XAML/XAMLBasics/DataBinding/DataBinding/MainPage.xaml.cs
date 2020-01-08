@@ -27,5 +27,10 @@ namespace DataBinding
         {
             await Navigation.PushAsync(new BindingMode());
         }
+
+        async void BindingsAndCollectionsButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new BindingsAndCollections());
+        }
     }
 }
