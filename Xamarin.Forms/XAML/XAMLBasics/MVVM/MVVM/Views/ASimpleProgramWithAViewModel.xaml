@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MVVM.ViewModels;assembly=MVVM"
+             x:Class="MVVM.Views.ASimpleProgramWithAViewModel"
+             Title="A Simple Program With a View Model">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ClockViewModel x:Key="clockVM"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
+               FontSize="Large"
+               TextColor="Blue">
+            <Label.BindingContext>
+                <local:ClockViewModel />
+            </Label.BindingContext>
+        </Label>
+
+        <Label BindingContext="{StaticResource Key=clockVM}"
+               Text="{Binding DateTime, StringFormat='{0:T}'}"
+               FontSize="Large"
+               TextColor="Red"/>
+
+        <Label BindingContext="{StaticResource Key=clockVM}"
+               Text="{Binding DateTime.Second}"
+               FontSize="Large"
+               TextColor="Green"/>
+
+    </StackLayout>
+
+</ContentPage>
