@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicBindings.BindingsWithABindingContext.Example">
+
+    <StackLayout Padding="10, 0">
+
+        <!-- No Binding -->
+        <Label x:Name="labelA"
+               Text="No Binding"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Slider x:Name="sliderA"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand"
+                ValueChanged="sliderA_ValueChanged" />
+
+        <!-- Binding in Code -->
+        <Label x:Name="labelB"
+               Text="Binding in Code"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Slider x:Name="sliderB"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+        <!-- Binding in XAML -->
+        <Label x:Name="labelC"
+               Text="Binding in XAML"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               BindingContext="{x:Reference sliderC}"
+               Rotation="{Binding Value}"/>
+
+        <Slider x:Name="sliderC"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>
