@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MVVM.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="MVVM.Views.MainPage">
     <StackLayout>
         <Button Text="A Simple Program Without A ViewModel" Clicked="ASimpleProgramWithoutAViewModelButton_Clicked"/>
         <Button Text="A Simple Program With A ViewModel" Clicked="ASimpleProgramWithAViewModelButton_Clicked"/>
         <Button Text="Interactive MVVM" Clicked="InteractiveMVVMButton_Clicked"/>
+        <Button Text="Commanding with View Models" Clicked="CommandingWithViewModelsButton_Clicked"/>
+        <Button Text="Implementing a NavigationMenu" Clicked="ImplementingANavigationMenuButton_Clicked"/>
     </StackLayout>
 </ContentPage>

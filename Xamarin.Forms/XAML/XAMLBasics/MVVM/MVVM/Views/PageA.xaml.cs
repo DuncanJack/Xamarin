@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace MVVM.Views
 {
-    public partial class InteractiveMVVM : ContentPage
+    public partial class PageA : ContentPage
     {
-        public InteractiveMVVM()
+        public PageA()
         {
             InitializeComponent();
         }

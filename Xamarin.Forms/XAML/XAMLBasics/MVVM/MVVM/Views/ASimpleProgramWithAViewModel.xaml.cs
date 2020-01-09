@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace MVVM
+namespace MVVM.Views
 {
     public partial class ASimpleProgramWithAViewModel : ContentPage
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace MVVM
+namespace MVVM.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
@@ -31,6 +31,16 @@ namespace MVVM
         async void InteractiveMVVMButton_Clicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new InteractiveMVVM());
+        }
+
+        async void CommandingWithViewModelsButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new CommandingWithViewModels());
+        }
+
+        async void ImplementingANavigationMenuButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ImplementingANavigationMenu());
         }
     }
 }
