@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicBindings.WithABindingContext"
+             Title="With a Binding Context">
+
+    <StackLayout Padding="10, 0">
+
+        <!-- Event Handler -->
+        <Label x:Name="labelA"
+               Text="Event Handler"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Slider x:Name="sliderA"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand"
+                ValueChanged="OnSliderA_ValueChanged" />
+
+        <!-- BindingContext and Binding in code -->
+        <Label x:Name="labelB"
+               Text="Binding in code"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Slider x:Name="sliderB"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+        <!-- BindingContext and Binding in XAML -->
+        <Label x:Name="labelC"
+               Text="Binding in XAML"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               BindingContext="{x:Reference sliderC}"
+               Rotation="{Binding Value}"/>
+
+        <Slider x:Name="sliderC"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+        <!-- BindingContext and Binding in XAML (object element 1) -->
+        <Label Text="Binding in XAML (object element 1)"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <Label.BindingContext>
+                <x:Reference Name="sliderD"/>
+            </Label.BindingContext>
+            <Label.Rotation>
+                <Binding Path="Value"/>
+            </Label.Rotation>
+        </Label>
+
+        <Slider x:Name="sliderD"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+        <!-- BindingContext and Binding in XAML (object element 2) -->
+        <Label Text="Binding in XAML (object element 2)"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               BindingContext="{x:Reference sliderE}">
+            <Label.Rotation>
+                <Binding>
+                    <Binding.Path>
+                        Value
+                    </Binding.Path>
+                </Binding>
+            </Label.Rotation>
+        </Label>
+
+        <Slider x:Name="sliderE"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>

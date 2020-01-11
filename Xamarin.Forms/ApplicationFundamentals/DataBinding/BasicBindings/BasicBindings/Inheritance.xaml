@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicBindings.Inheritance">
+
+    <StackLayout Padding="10">
+
+        <StackLayout VerticalOptions="FillAndExpand"
+                     BindingContext="{x:Reference slider}">
+
+            <Label Text="TEXT"
+                   FontSize="80"
+                   HorizontalOptions="Center"
+                   VerticalOptions="EndAndExpand"
+                   Rotation="{Binding Value}"/>
+
+            <BoxView Color="#800000FF"
+                     WidthRequest="180"
+                     HeightRequest="40"
+                     HorizontalOptions="Center"
+                     VerticalOptions="StartAndExpand"
+                     Rotation="{Binding Value}"/>
+
+             <BoxView Color="#8000FF00"
+                     WidthRequest="180"
+                     HeightRequest="40"
+                     HorizontalOptions="Center"
+                     VerticalOptions="StartAndExpand">
+                 <BoxView.Rotation>
+                     <Binding Path="Value"/>
+                 </BoxView.Rotation>
+             </BoxView>
+
+             <BoxView Color="#80FF0000"
+                     WidthRequest="180"
+                     HeightRequest="40"
+                     HorizontalOptions="Center"
+                     VerticalOptions="StartAndExpand">
+                 <BoxView.Rotation>
+                     <Binding>
+                         <Binding.Path>
+                             Value
+                         </Binding.Path>
+                     </Binding>
+                 </BoxView.Rotation>
+             </BoxView>
+
+        </StackLayout>
+
+        <Slider x:Name="slider"
+                Maximum="360"/>
+
+    </StackLayout>
+
+</ContentPage>
