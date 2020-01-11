@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace DrawingBasics.iOS
+namespace DrawingASimpleCircle.iOS
 {
     public class Application
     {

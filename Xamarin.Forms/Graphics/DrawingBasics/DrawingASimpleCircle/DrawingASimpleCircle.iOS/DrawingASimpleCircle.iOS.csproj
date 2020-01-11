@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3993EB15-07B7-41C8-88D5-FBFF3656B578}</ProjectGuid>
+    <ProjectGuid>{9D38FBC9-F4B6-4757-8EBE-2628BA049615}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DrawingBasics.iOS</RootNamespace>
+    <RootNamespace>DrawingASimpleCircle.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>DrawingBasics.iOS</AssemblyName>
+    <AssemblyName>DrawingASimpleCircle.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
@@ -122,20 +122,20 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991477" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-    <PackageReference Include="SkiaSharp.Views.Forms">
+    <PackageReference Include="SkiaSharp">
       <Version>1.68.1.1</Version>
     </PackageReference>
-    <PackageReference Include="SkiaSharp">
+    <PackageReference Include="SkiaSharp.Views.Forms">
       <Version>1.68.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\DrawingBasics\DrawingBasics.csproj">
-      <Project>{9E26E88C-23D4-4B85-97C0-DCFC60F7D074}</Project>
-      <Name>DrawingBasics</Name>
+    <ProjectReference Include="..\DrawingASimpleCircle\DrawingASimpleCircle.csproj">
+      <Project>{5D344753-2486-4A81-A2A5-C382C7FA0CB0}</Project>
+      <Name>DrawingASimpleCircle</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

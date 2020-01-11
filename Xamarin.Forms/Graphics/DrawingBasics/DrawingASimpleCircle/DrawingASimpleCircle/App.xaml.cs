@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DrawingBasics
+namespace DrawingASimpleCircle
 {
     public partial class App : Application
     {
@@ -10,7 +10,7 @@ namespace DrawingBasics
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
