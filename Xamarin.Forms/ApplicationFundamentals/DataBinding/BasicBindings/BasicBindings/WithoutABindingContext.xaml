@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicBindings.WithoutABindingContext"
+             Title="Without a Binding Context">
+
+    <StackLayout Padding="10,0" Margin="20,35,20,20">
+
+        <!-- Binding in code -->
+        <Label x:Name="labelB"
+               Text="Binding in code"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+        <Slider x:Name="sliderB"
+                Minimum="-2"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Binding in XAML -->
+        <Label Text="Binding in XAML"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Scale="{Binding Source={x:Reference sliderC},
+                               Path=Value}"/>
+
+        <Slider x:Name="sliderC"
+                Minimum="-2"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Binding in XAML (object element 1) -->
+        <Label Text="Binding in XAML (object element 1)"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <Label.Scale>
+                <Binding Source="{x:Reference sliderD}"
+                         Path="Value"/>
+            </Label.Scale>
+        </Label>
+
+        <Slider x:Name="sliderD"
+                Minimum="-2"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Binding in XAML (object element 2) -->
+        <Label Text="Binding in XAML (object element 2)"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <Label.Scale>
+                <Binding>
+                    <Binding.Path>
+                        Value
+                    </Binding.Path>
+                    <Binding.Source>
+                        <x:Reference Name="sliderE"/>
+                    </Binding.Source>
+                </Binding>
+            </Label.Scale>
+        </Label>
+
+        <Slider x:Name="sliderE"
+                Minimum="-2"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Binding in XAML (object element 3) -->
+        <Label Text="Binding in XAML (object element 3)"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <Label.Scale>
+                <Binding>
+                    <Binding.Path>
+                        Value
+                    </Binding.Path>
+                    <Binding.Source>
+                        <x:Reference>
+                            sliderF
+                        </x:Reference>
+                    </Binding.Source>
+                </Binding>
+            </Label.Scale>
+        </Label>
+
+        <Slider x:Name="sliderF"
+                Minimum="-2"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"/>
+
+    </StackLayout>
+</ContentPage>

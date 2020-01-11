@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace BasicBindings.BindingsWithABindingContext
+namespace BasicBindings
 {
-    public partial class Example : ContentPage
+    public partial class WithABindingContext : ContentPage
     {
-        public Example()
+        public WithABindingContext()
         {
             InitializeComponent();
 
@@ -16,7 +16,7 @@ namespace BasicBindings.BindingsWithABindingContext
             labelB.SetBinding(RotationProperty, "Value");
         }
 
-        void sliderA_ValueChanged(System.Object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        void OnSliderA_ValueChanged(System.Object sender, Xamarin.Forms.ValueChangedEventArgs e)
         {
             var slider = sender as Slider;
             labelA.Rotation = slider.Value;

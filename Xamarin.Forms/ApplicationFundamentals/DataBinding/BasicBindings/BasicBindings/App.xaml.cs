@@ -10,7 +10,7 @@ namespace BasicBindings
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new MyTabbedPage();
         }
 
         protected override void OnStart()
