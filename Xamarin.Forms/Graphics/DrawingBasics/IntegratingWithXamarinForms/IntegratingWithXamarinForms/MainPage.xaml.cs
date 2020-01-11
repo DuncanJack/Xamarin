@@ -22,5 +22,10 @@ namespace IntegratingWithXamarinForms
         {
             await Navigation.PushAsync(new TapToggleFill());
         }
+
+        async void ColorExploreButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ColorExplore());
+        }
     }
 }

@@ -7,6 +7,7 @@
 
     <StackLayout>
         <Button Text="Tap Toggle Fill" Clicked="TapToggleFillButton_Clicked"/>
+        <Button Text="Color Explore" Clicked="ColorExploreButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>
