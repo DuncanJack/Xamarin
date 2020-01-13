@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingMode.ReverseBinding">
+
+    <StackLayout Padding="10,0" Margin="20,35,20,20">
+
+        <!-- Source slider, no binding context -->
+        <Label VerticalOptions="Center"
+               HorizontalOptions="CenterAndExpand"
+               Text="{Binding Value, Source={x:Reference slider1}}"/>
+
+        <Slider x:Name="slider1"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Source slider, with binding context -->
+        <Label VerticalOptions="Center"
+               HorizontalOptions="CenterAndExpand"
+               BindingContext="{x:Reference slider2}"
+               Text="{Binding Value}"/>
+
+        <Slider x:Name="slider2"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Source label, no binding context -->
+        <Label x:Name="label3"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+        <Slider HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Value="{Binding Source={x:Reference label3},
+                                Path=Text}"/>
+
+        <!-- Source label, with binding context -->
+        <Label x:Name="label4"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+        <Slider HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                BindingContext="{x:Reference label4}"
+                Value="{Binding Text}"/>
+
+    </StackLayout>
+                 
+</ContentPage>

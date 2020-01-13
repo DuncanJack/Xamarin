@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingMode.OverridingTheBindingMode"
+             BackgroundColor="AntiqueWhite">
+
+    <StackLayout Margin="20,35,20,20">
+
+        <Entry Text="Haaaaaaaaa"
+               x:Name="entry1" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+               Grid.Row="0"/>
+
+        <Entry BindingContext="{x:Reference entry1}"
+               Text="{Binding Text}"
+               VerticalOptions="Center"
+               HorizontalOptions="CenterAndExpand"
+               x:Name="entry2"
+               Grid.Row="1"/>
+
+        <BoxView HeightRequest="1" BackgroundColor="Silver"/>
+
+        <Label x:Name="label"
+               Text="TEXT"
+               FontSize="40"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Scale="{Binding Source={x:Reference slider},
+                               Path=Value,
+                               Mode=OneWayToSource}"/>
+
+        <Slider x:Name="slider"
+                VerticalOptions="CenterAndExpand" />
+
+
+    </StackLayout>
+
+</ContentPage>
