@@ -2,7 +2,8 @@
 
 Learning Xamarin using the following resources:
 
-| Source  | URL |
-| --- | --- |
-| Xamarin Docs | https://docs.microsoft.com/xamarin/ |
-| Xamarin Developers YouTube Channel | https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg |
+| Name | Source  | URL |
+| --- | --- | --- |
+| Developers | Xamarin Developers YouTube Channel | https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg |
+| Docs | Xamarin Docs | https://docs.microsoft.com/xamarin/ |
+| Understanding | | |
