@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace XamarinForms101.DataBinding
 {
-    public class DataBindingViewModel : INotifyPropertyChanged
+    public class MainPageViewModel : INotifyPropertyChanged
     {
         string _name = string.Empty;
         public string Name

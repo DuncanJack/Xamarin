@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace XamarinForms101.DataBinding
+namespace XamarinForms101.Commands
 {
-    public partial class DataBindingPage : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public DataBindingPage()
+        public MainPage()
         {
             InitializeComponent();
         }
