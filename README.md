@@ -1,6 +1,6 @@
 # Xamarin
 
-Working through Xamarin Docs 
+Learning Xamarin using the following resources:
 
 | Source  | URL |
 | --- | --- |
