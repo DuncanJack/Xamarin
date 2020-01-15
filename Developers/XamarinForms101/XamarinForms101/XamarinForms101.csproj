@@ -17,5 +17,6 @@
   <ItemGroup>
     <Folder Include="DataBinding\" />
     <Folder Include="Commands\" />
+    <Folder Include="CommandParameters\" />
   </ItemGroup>
 </Project>
