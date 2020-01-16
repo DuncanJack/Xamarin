@@ -19,5 +19,6 @@
     <Folder Include="Commands\" />
     <Folder Include="CommandParameters\" />
     <Folder Include="ControlReferenceBinding\" />
+    <Folder Include="ApplicationResources\" />
   </ItemGroup>
 </Project>

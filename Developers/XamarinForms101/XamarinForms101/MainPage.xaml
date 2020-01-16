@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:ar="clr-namespace:XamarinForms101.ApplicationResources"
             xmlns:cmd="clr-namespace:XamarinForms101.Commands"
             xmlns:cmp="clr-namespace:XamarinForms101.CommandParameters"
             xmlns:crb="clr-namespace:XamarinForms101.ControlReferenceBinding"
             xmlns:db="clr-namespace:XamarinForms101.DataBinding"
             x:Class="XamarinForms101.MainPage">
 
-    <db:MainPage Title="Data Binding"/>
-    <cmd:MainPage Title="Commands"/>
-    <cmp:MainPage Title="Command Parameters"/>
-    <crb:MainPage Title="Control Reference Binding"/>
+    <db:MainPage Title="A"/>
+    <cmd:MainPage Title="B"/>
+    <cmp:MainPage Title="C"/>
+    <crb:MainPage Title="D"/>
+    <ar:MainPage Title="E"/>
 
 </TabbedPage>
