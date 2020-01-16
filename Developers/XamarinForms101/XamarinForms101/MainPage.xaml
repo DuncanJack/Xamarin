@@ -6,6 +6,7 @@
             xmlns:cmp="clr-namespace:XamarinForms101.CommandParameters"
             xmlns:crb="clr-namespace:XamarinForms101.ControlReferenceBinding"
             xmlns:db="clr-namespace:XamarinForms101.DataBinding"
+            xmlns:dr="clr-namespace:XamarinForms101.DynamicResources"
             x:Class="XamarinForms101.MainPage">
 
     <db:MainPage Title="A"/>
@@ -13,5 +14,6 @@
     <cmp:MainPage Title="C"/>
     <crb:MainPage Title="D"/>
     <ar:MainPage Title="E"/>
+    <dr:MainPage Title="F"/>
 
 </TabbedPage>

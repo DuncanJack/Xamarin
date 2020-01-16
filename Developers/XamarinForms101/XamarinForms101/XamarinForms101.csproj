@@ -20,5 +20,6 @@
     <Folder Include="CommandParameters\" />
     <Folder Include="ControlReferenceBinding\" />
     <Folder Include="ApplicationResources\" />
+    <Folder Include="DynamicResources\" />
   </ItemGroup>
 </Project>
