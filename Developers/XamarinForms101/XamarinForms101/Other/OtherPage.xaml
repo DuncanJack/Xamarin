@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinForms101.Other.OtherPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="MyDesignTimeString">This is my design-time string</x:String>
+            <Style x:Key="style1" TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+            <Style x:Key="style2" TargetType="Label">
+                <Setter Property="TextColor" Value="Green"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="20,100,20,20">
+
+
+        <!-- OnPlatform -->
+        <Label Text="{OnPlatform iOS='iOS', Android='Android'}"/>
+
+        <!-- OnIdiom -->
+        <Label Text="{OnIdiom Phone='On Phone', Tablet='On Tablet'}"
+               FontSize="{OnIdiom Phone=Medium, Tablet=80}"
+               TextColor="{OnIdiom Phone=Red, Tablet=Blue}"/>
+
+        <Label Text="Style"
+               Style="{OnIdiom Phone={StaticResource style1}, Tablet={StaticResource style2}}" />
+
+        <!-- Design Time Data -->
+        <d:Label Text="Run Time"
+                 d:Text="{Binding Source={StaticResource MyDesignTimeString}}"/>
+
+        <ListView ItemsSource="{Binding Something}" HasUnevenRows="True">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Alpha</x:String>
+                    <x:String>Bravo</x:String>
+                    <x:String>charlie</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+
+                            <!-- Bind to design time data -->
+                            <Label Text="{Binding Text}" d:Text="{Binding .}"/>
+                            <Label Text="{Binding Blah}" d:Text="My Description"/>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+
+
+</ContentPage>
