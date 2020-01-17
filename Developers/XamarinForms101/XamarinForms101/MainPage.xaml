@@ -8,14 +8,16 @@
             xmlns:db="clr-namespace:XamarinForms101.DataBinding"
             xmlns:dr="clr-namespace:XamarinForms101.DynamicResources"
             xmlns:o="clr-namespace:XamarinForms101.Other"
+            xmlns:s="clr-namespace:XamarinForms101.Styles"
             x:Class="XamarinForms101.MainPage">
 
-    <db:MainPage Title="A"/>
-    <cmd:MainPage Title="B"/>
-    <cmp:MainPage Title="C"/>
-    <crb:MainPage Title="D"/>
-    <ar:MainPage Title="E"/>
-    <dr:MainPage Title="F"/>
-    <o:OtherPage Title="G"/>
+    <db:MainPage Title="Data Binding"/>
+    <cmd:MainPage Title="Commands"/>
+    <cmp:MainPage Title="Command Parameters"/>
+    <crb:MainPage Title="Control Reference Binding"/>
+    <ar:MainPage Title="Application Resources"/>
+    <dr:MainPage Title="Dynamic Resources"/>
+    <o:OtherPage Title="Other"/>
+    <s:MainPage Title="Styles"/>
 
 </TabbedPage>

@@ -22,5 +22,6 @@
     <Folder Include="ApplicationResources\" />
     <Folder Include="DynamicResources\" />
     <Folder Include="Other\" />
+    <Folder Include="Styles\" />
   </ItemGroup>
 </Project>
