@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms101.Styles.MainPage">
+
+    <ContentPage.Resources>
+
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="FontSize" Value="50"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="labelStyle">
+            <Setter Property="TextColor" Value="Green"/>
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <StackLayout Margin="20,50,20,20">
+
+        <Label Text="Page Style"/>
+        <Label Text="Page Style"/>
+
+        <Label Text="Named Page Style" Style="{StaticResource labelStyle}"/>
+        <Label Text="Named Page Style" Style="{StaticResource labelStyle}"/>
+
+        <Label Text="Label 1" TextColor="Blue" FontSize="20"/>
+        <Label Text="Label 1" TextColor="Blue" FontSize="20"/>
+
+    </StackLayout>
+
+</ContentPage>

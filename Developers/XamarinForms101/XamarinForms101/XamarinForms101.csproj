@@ -22,5 +22,8 @@
     <Folder Include="ApplicationResources\" />
     <Folder Include="DynamicResources\" />
     <Folder Include="Other\" />
+    <Folder Include="Styles\" />
+    <Folder Include="CompiledBindings\" />
+    <Folder Include="EditorsAndEntries\" />
   </ItemGroup>
 </Project>
