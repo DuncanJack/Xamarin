@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace XamarinForms101.Other
 {
-    public partial class OtherPage : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public OtherPage()
+        public MainPage()
         {
             InitializeComponent();
         }
