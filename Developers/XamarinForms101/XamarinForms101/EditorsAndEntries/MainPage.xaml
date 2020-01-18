@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms101.EditorsAndEntries.MainPage">
+
+    <StackLayout Margin="20,80,20,20">
+
+        <Entry Placeholder="Chat"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Chat" />
+
+        <Entry Placeholder="Default"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Default" />
+
+        <Entry Placeholder="Email"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Email" />
+
+        <Entry Placeholder="Numeric"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Numeric" />
+
+        <Entry Placeholder="Plain"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Plain" />
+
+        <Entry Placeholder="Telephone"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Telephone" />
+
+        <Entry Placeholder="Text"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Text" />
+
+        <Entry Placeholder="Url"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Send"
+               Keyboard="Url" />
+
+        <Editor Placeholder="My Editor"
+                VerticalOptions="CenterAndExpand"
+                AutoSize="TextChanges"
+                BackgroundColor="Silver"/>
+
+    </StackLayout>
+
+</ContentPage>

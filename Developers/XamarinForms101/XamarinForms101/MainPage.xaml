@@ -10,6 +10,7 @@
             xmlns:o="clr-namespace:XamarinForms101.Other"
             xmlns:s="clr-namespace:XamarinForms101.Styles"
             xmlns:cb="clr-namespace:XamarinForms101.CompiledBindings"
+            xmlns:ee="clr-namespace:XamarinForms101.EditorsAndEntries"
             x:Class="XamarinForms101.MainPage">
 
     <db:MainPage Title="Data Binding"/>
@@ -21,5 +22,6 @@
     <o:OtherPage Title="Other"/>
     <s:MainPage Title="Styles"/>
     <cb:MainPage Title="Compiled Bindings"/>
+    <ee:MainPage Title="Editors and Entries"/>
 
 </TabbedPage>
