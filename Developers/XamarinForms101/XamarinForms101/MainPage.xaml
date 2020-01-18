@@ -5,6 +5,7 @@
             xmlns:cmd="clr-namespace:XamarinForms101.Commands"
             xmlns:cmp="clr-namespace:XamarinForms101.CommandParameters"
             xmlns:crb="clr-namespace:XamarinForms101.ControlReferenceBinding"
+            xmlns:ct="clr-namespace:XamarinForms101.ControlTemplates"
             xmlns:db="clr-namespace:XamarinForms101.DataBinding"
             xmlns:dr="clr-namespace:XamarinForms101.DynamicResources"
             xmlns:o="clr-namespace:XamarinForms101.Other"
@@ -19,9 +20,10 @@
     <crb:MainPage Title="Control Reference Binding"/>
     <ar:MainPage Title="Application Resources"/>
     <dr:MainPage Title="Dynamic Resources"/>
-    <o:OtherPage Title="Other"/>
+    <o:MainPage Title="Other"/>
     <s:MainPage Title="Styles"/>
     <cb:MainPage Title="Compiled Bindings"/>
     <ee:MainPage Title="Editors and Entries"/>
+    <ct:MainPage Title="Control Templates"/>
 
 </TabbedPage>

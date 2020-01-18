@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms101.ControlTemplates.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <ControlTemplate x:Key="MyOnPageTemplate">
+                <StackLayout Margin="20">
+                    <Label Text="MyPageTemplate Header"
+                           BackgroundColor="White"
+                           VerticalOptions="Start"/>
+                    <ContentPresenter BackgroundColor="Yellow"
+                                      VerticalOptions="Fill"/>
+                    <Label Text="MyPageTemplate Footer"
+                           BackgroundColor="White"
+                           VerticalOptions="End"/>
+                </StackLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
+
+        <ControlTemplate x:Key="MyOtherTemplate">
+            <StackLayout Margin="20">
+                <Label Text="MyOtherTemplate header"
+                       BackgroundColor="Plum"
+                       VerticalOptions="Start"/>
+                <ContentPresenter BackgroundColor="Peru"
+                                  VerticalOptions="Fill"/>
+                <Label Text="MyPageTemplate Footer"
+                       BackgroundColor="White"
+                       VerticalOptions="End"/>
+            </StackLayout>
+        </ControlTemplate>
+
+        <Style TargetType="ContentView">
+            <Setter Property="ControlTemplate" Value="{StaticResource MyOtherTemplate}"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <!-- Can also specify in the ContentPage element -->
+    <ContentView ControlTemplate="{StaticResource MyTemplate}">
+        <StackLayout>
+            <ContentView ControlTemplate="{StaticResource MyOnPageTemplate}">
+                <Label Text="My Label"/>
+            </ContentView>
+            <ContentView ControlTemplate="{StaticResource MyOnPageTemplate}">
+                <Label Text="My Label"/>
+            </ContentView>
+            <ContentView>
+                <Label Text="My Label"/>
+            </ContentView>
+            <ContentView>
+                <Label Text="My Label"/>
+            </ContentView>
+        </StackLayout>
+
+    </ContentView>
+
+</ContentPage>

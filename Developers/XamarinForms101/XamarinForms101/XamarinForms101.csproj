@@ -25,5 +25,6 @@
     <Folder Include="Styles\" />
     <Folder Include="CompiledBindings\" />
     <Folder Include="EditorsAndEntries\" />
+    <Folder Include="ControlTemplates\" />
   </ItemGroup>
 </Project>
