@@ -26,5 +26,19 @@
     <Folder Include="CompiledBindings\" />
     <Folder Include="EditorsAndEntries\" />
     <Folder Include="ControlTemplates\" />
+    <Folder Include="EmbeddedImages\" />
+    <Folder Include="EmbeddedImages\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="EmbeddedImages\Images\a.png" />
+    <None Remove="EmbeddedImages\Images\b.png" />
+    <None Remove="EmbeddedImages\Images\c.png" />
+    <None Remove="EmbeddedImages\Images\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedImages\Images\a.png" />
+    <EmbeddedResource Include="EmbeddedImages\Images\b.png" />
+    <EmbeddedResource Include="EmbeddedImages\Images\c.png" />
+    <EmbeddedResource Include="EmbeddedImages\Images\d.png" />
   </ItemGroup>
 </Project>
