@@ -23,5 +23,6 @@
     <Folder Include="DynamicResources\" />
     <Folder Include="Other\" />
     <Folder Include="Styles\" />
+    <Folder Include="CompiledBindings\" />
   </ItemGroup>
 </Project>

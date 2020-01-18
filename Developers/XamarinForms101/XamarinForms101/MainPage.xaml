@@ -9,6 +9,7 @@
             xmlns:dr="clr-namespace:XamarinForms101.DynamicResources"
             xmlns:o="clr-namespace:XamarinForms101.Other"
             xmlns:s="clr-namespace:XamarinForms101.Styles"
+            xmlns:cb="clr-namespace:XamarinForms101.CompiledBindings"
             x:Class="XamarinForms101.MainPage">
 
     <db:MainPage Title="Data Binding"/>
@@ -19,5 +20,6 @@
     <dr:MainPage Title="Dynamic Resources"/>
     <o:OtherPage Title="Other"/>
     <s:MainPage Title="Styles"/>
+    <cb:MainPage Title="Compiled Bindings"/>
 
 </TabbedPage>
