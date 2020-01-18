@@ -12,6 +12,7 @@
             xmlns:s="clr-namespace:XamarinForms101.Styles"
             xmlns:cb="clr-namespace:XamarinForms101.CompiledBindings"
             xmlns:ee="clr-namespace:XamarinForms101.EditorsAndEntries"
+            xmlns:ei="clr-namespace:XamarinForms101.EmbeddedImages"
             x:Class="XamarinForms101.MainPage">
 
     <db:MainPage Title="Data Binding"/>
@@ -25,5 +26,6 @@
     <cb:MainPage Title="Compiled Bindings"/>
     <ee:MainPage Title="Editors and Entries"/>
     <ct:MainPage Title="Control Templates"/>
+    <ei:MainPage Title="Embedded Images"/>
 
 </TabbedPage>
