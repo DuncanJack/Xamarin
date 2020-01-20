@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLifecycle.MyPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="X" Clicked="XToolbarItem_Clicked"/>
+        <ToolbarItem Text="Y" Clicked="YToolbarItem_Clicked"/>
+        <ToolbarItem Text="Z" Clicked="ZToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <Label Text="My Page"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Large"/>
+
+        <Button Text="Push"
+                Clicked="PushButton_Clicked"/>
+
+        <Button Text="PushModal"
+                Clicked="PushModalButton_Clicked"/>
+
+        <Button Text="PopModal"
+                Clicked="PopModalButton_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
