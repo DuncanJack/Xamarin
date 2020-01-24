@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:PixelsAndDeviceIndependentUnits"
+            x:Class="PixelsAndDeviceIndependentUnits.MyTabbedPage">
+
+    <NavigationPage Title="Surface Size">
+        <x:Arguments>
+            <local:SurfaceSizePage Title="Surface Size" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Ellipse Fill">
+        <x:Arguments>
+            <local:EllipseFillPage Title="Ellipse Fill" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <local:SurfaceSizePage Title="Surface Size" />
+
+    <local:EllipseFillPage Title="Ellipse Fill" />
+
+</TabbedPage>
