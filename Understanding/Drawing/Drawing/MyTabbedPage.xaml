@@ -6,13 +6,25 @@
 
     <NavigationPage Title="A">
         <x:Arguments>
-            <local:CirclePage Title="CirclePage"/>
+            <local:CirclePage/>
         </x:Arguments>
     </NavigationPage>
 
     <NavigationPage Title="B">
         <x:Arguments>
-            <local:MyCirclePage Title="MyCirclePage"/>
+            <local:MyCirclePage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="C">
+        <x:Arguments>
+            <local:LinePage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="D">
+        <x:Arguments>
+            <local:MyLinePage/>
         </x:Arguments>
     </NavigationPage>
 
