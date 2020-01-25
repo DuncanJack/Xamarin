@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+
+using Xamarin.Forms;
 using SkiaSharp;
 using SkiaSharp.Views.Forms;
-using Xamarin.Forms;
 
 namespace Drawing
 {
@@ -23,7 +24,7 @@ namespace Drawing
 
             SKPaint paint = new SKPaint
             {
-                IsAntialias = true,
+                IsAntialias = true,        
                 Style = SKPaintStyle.Fill
             };
 
@@ -33,13 +34,13 @@ namespace Drawing
             canvas.DrawCircle(d, d, d, paint);
 
             paint.Color = SKColors.Green;
-            canvas.DrawCircle(d, 3 * d, d, paint);
+            canvas.DrawCircle(d, 3*d, d, paint);
 
             paint.Color = SKColors.Blue;
-            canvas.DrawCircle(3 * d, d, d, paint);
+            canvas.DrawCircle(3*d, d, d, paint);
 
             paint.Color = SKColors.Yellow;
-            canvas.DrawCircle(3 * d, 3 * d, d, paint);
+            canvas.DrawCircle(3*d, 3*d, d, paint);
         }
     }
 }

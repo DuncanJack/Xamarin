@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B110EDEE-829E-457B-9398-1018CC72321F}</ProjectGuid>
+    <ProjectGuid>{3A045508-B967-401E-ABD7-6DE0ED308BE7}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -124,17 +124,17 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-    <PackageReference Include="SkiaSharp.Views.Forms">
+    <PackageReference Include="SkiaSharp">
       <Version>1.68.1.1</Version>
     </PackageReference>
-    <PackageReference Include="SkiaSharp">
+    <PackageReference Include="SkiaSharp.Views.Forms">
       <Version>1.68.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Drawing\Drawing.csproj">
-      <Project>{4D585CBB-2B7A-4AC5-A9EB-AD162DBDB765}</Project>
+      <Project>{714E9F02-AD61-4F99-9F6F-26C19D17A568}</Project>
       <Name>Drawing</Name>
     </ProjectReference>
   </ItemGroup>
