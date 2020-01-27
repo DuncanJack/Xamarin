@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:IntegratingTextAndGraphics"
+            x:Class="IntegratingTextAndGraphics.MyTabbedPage">
+
+        <NavigationPage Title="Framed">
+            <x:Arguments>
+                <local:FramedTextPage/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Approximate">
+            <x:Arguments>
+                <local:ApproximatePage/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Outlined">
+            <x:Arguments>
+                <local:OutlinedTextPage/>
+            </x:Arguments>
+        </NavigationPage>
+
+</TabbedPage>
