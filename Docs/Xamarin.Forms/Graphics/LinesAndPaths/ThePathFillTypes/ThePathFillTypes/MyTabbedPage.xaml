@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:ThePathFillTypes"
+            x:Class="ThePathFillTypes.MyTabbedPage">
+
+    <NavigationPage Title="Five Pointed Star Page">
+        <x:Arguments>
+            <local:FivePointedStarPage Title="Five Pointed Star Page"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Overlapping Circles Page">
+        <x:Arguments>
+            <local:OverlappingCirclesPage Title="Overlapping Circles Page"/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
