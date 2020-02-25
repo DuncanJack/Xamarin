@@ -19,7 +19,14 @@ namespace ErrorRoseAnalysis
             SKSurface surface = e.Surface;
             SKCanvas canvas = surface.Canvas;
 
-            canvas.Clear();
+            if(slider.Value < 5)
+            {
+                canvas.Clear(SKColors.Red);
+            }
+            else
+            {
+                canvas.Clear(SKColors.Blue);
+            }
 
             SKPaint paint = new SKPaint
             {
@@ -33,13 +40,21 @@ namespace ErrorRoseAnalysis
             canvas.DrawRect(rect, paint);
         }
 
+
         private void OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            double value = e.NewValue;
+            Console.WriteLine($"OldValue: {e.OldValue}, NewValue: {e.NewValue}");
 
-            slider.Value = 3f;
+
+            double value = Math.Round(e.NewValue);
+
+            label.Text = value.ToString();
+
+            slider.Value = value;
 
             Console.WriteLine(value);
+
+            canvasView.InvalidateSurface();
         }
     }
 }

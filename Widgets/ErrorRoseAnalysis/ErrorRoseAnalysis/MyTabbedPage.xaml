@@ -10,4 +10,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="My">
+        <x:Arguments>
+            <local:MyPage Title="My"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>

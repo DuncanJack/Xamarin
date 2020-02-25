@@ -4,7 +4,7 @@
              xmlns:skiaforms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="ErrorRoseAnalysis.ExamplePage">
 
-    <Grid>
+    <Grid BackgroundColor="CornflowerBlue" Margin="10" Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -19,11 +19,22 @@
                 ValueChanged="OnSliderValueChanged"
                 Minimum="0"
                 Maximum="10"
+                Value="3"
                 Scale="1"
                 Grid.Row="0"
                 Grid.Column="0"/>
-        <Label Grid.Column="1" Grid.Row="0" Text="B" HorizontalOptions="Center" VerticalOptions="Center"/>
-        <Label Grid.Column="0" Grid.Row="1" Text="C" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Label x:Name="label"
+               Grid.Column="1"
+               Grid.Row="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Label Grid.Column="0"
+               Grid.Row="1"
+               Text="C"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
 
         <skiaforms:SKCanvasView x:Name="canvasView"
                                 Grid.Row="1"

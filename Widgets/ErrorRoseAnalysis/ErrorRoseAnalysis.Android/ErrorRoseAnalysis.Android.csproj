@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ErrorRoseAnalysis\ErrorRoseAnalysis.csproj">
-      <Project>{BFAD817D-6237-47BE-BF87-9B9DD0AEDF4C}</Project>
+      <Project>{977776FC-DFEB-4907-AD20-8983CF66338D}</Project>
       <Name>ErrorRoseAnalysis</Name>
     </ProjectReference>
   </ItemGroup>
