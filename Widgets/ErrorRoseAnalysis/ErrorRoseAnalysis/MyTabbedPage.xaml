@@ -16,4 +16,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="Test">
+        <x:Arguments>
+            <local:TestPage Title="Test"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
