@@ -22,4 +22,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="My New">
+        <x:Arguments>
+            <local:MyNewPage Title="My New"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
