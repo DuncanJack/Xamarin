@@ -5,10 +5,6 @@
              x:Class="IntegratingWithXamarinForms.TapToggleFill"
              Title="Tap Toggle Fill">
 
-    <skia:SKCanvasView PaintSurface="OnCanvasView_PaintSurface">
-        <skia:SKCanvasView.GestureRecognizers>
-            <TapGestureRecognizer Tapped="OnCanvasView_Tapped"/>
-        </skia:SKCanvasView.GestureRecognizers>
-    </skia:SKCanvasView>
+    <skia:SKCanvasView PaintSurface="OnCanvasView_PaintSurface"/>
     
 </ContentPage>
