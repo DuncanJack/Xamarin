@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TheTranslateTransform"
+            x:Class="TheTranslateTransform.MyTabbedPage">
+
+    <NavigationPage Title="Accumulated Translate">
+        <x:Arguments>
+            <local:AccumulatedTranslatePage Title="Accumulated Translate"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Translate Text Effects">
+        <x:Arguments>
+            <local:TranslateTextEffectsPage Title="Translate Text Effects"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Hendecagram Array">
+        <x:Arguments>
+            <local:HendecagramArrayPage Title="Hendecagram Array"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Hendecagram Animation">
+        <x:Arguments>
+            <local:HendecagramAnimationPage Title="Hendecagram Animation"/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
