@@ -4,27 +4,34 @@
             xmlns:local="clr-namespace:TheTranslateTransform"
             x:Class="TheTranslateTransform.MyTabbedPage">
 
-    <NavigationPage Title="Accumulated Translate">
+    <NavigationPage Title="A">
         <x:Arguments>
             <local:AccumulatedTranslatePage Title="Accumulated Translate"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Translate Text Effects">
+    <NavigationPage Title="B">
         <x:Arguments>
             <local:TranslateTextEffectsPage Title="Translate Text Effects"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Hendecagram Array">
+    <NavigationPage Title="C">
         <x:Arguments>
             <local:HendecagramArrayPage Title="Hendecagram Array"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Hendecagram Animation">
+    <NavigationPage Title="D1">
         <x:Arguments>
-            <local:HendecagramAnimationPage Title="Hendecagram Animation"/>
+            <local:HendecagramAnimationPage Title="Hendecagram Animation 1"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    
+    <NavigationPage Title="D2">
+        <x:Arguments>
+            <local:HendecagramAnimation2Page Title="Hendecagram Animation 2"/>
         </x:Arguments>
     </NavigationPage>
 

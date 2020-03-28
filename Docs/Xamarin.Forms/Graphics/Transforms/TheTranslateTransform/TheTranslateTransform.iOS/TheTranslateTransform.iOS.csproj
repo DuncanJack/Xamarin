@@ -129,7 +129,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\TheTranslateTransform\TheTranslateTransform.csproj">
-      <Project>{9CCDB62B-67A9-4FF5-B500-BAD417E4C8B2}</Project>
+      <Project>{7BE33D64-7B22-4EC9-9132-2B4966ABFA77}</Project>
       <Name>TheTranslateTransform</Name>
     </ProjectReference>
   </ItemGroup>
