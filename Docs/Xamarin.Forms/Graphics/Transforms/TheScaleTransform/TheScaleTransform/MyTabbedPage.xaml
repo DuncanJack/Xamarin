@@ -4,9 +4,15 @@
             xmlns:local="clr-namespace:TheScaleTransform"
             x:Class="TheScaleTransform.MyTabbedPage">
 
-    <NavigationPage Title="Basic Scale">
+    <NavigationPage Title="Basic">
         <x:Arguments>
             <local:BasicScalePage Title="Basic Scale"/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Centered">
+        <x:Arguments>
+            <local:CenteredScalePage Title="Centered Scale"/>
         </x:Arguments>
     </NavigationPage>
 
