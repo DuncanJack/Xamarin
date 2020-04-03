@@ -16,4 +16,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="Anisotropic">
+        <x:Arguments>
+            <local:AnisotropicScalingPage Title="Anisotropic Scaling"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
