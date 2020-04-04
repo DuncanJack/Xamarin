@@ -7,7 +7,7 @@ namespace TheScaleTransform
 {
     public class AnisotropicScalingPage : ContentPage
     {
-        static readonly SKPath Path;
+        public static readonly SKPath Path;
 
         static AnisotropicScalingPage()
         {

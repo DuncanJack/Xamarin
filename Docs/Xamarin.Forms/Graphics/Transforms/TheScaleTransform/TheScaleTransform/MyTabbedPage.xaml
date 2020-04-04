@@ -28,4 +28,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="Isotropic">
+        <x:Arguments>
+            <local:IsotropicScalingPage Title="Isotropic Scaling"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
