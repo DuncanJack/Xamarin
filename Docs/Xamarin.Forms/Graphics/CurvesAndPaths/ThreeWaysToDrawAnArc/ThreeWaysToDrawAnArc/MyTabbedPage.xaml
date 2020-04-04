@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:ThreeWaysToDrawAnArc"
+            x:Class="ThreeWaysToDrawAnArc.MyTabbedPage">
+
+    <NavigationPage Title="Angle Arc A">
+        <x:Arguments>
+            <local:TheAngleArcPage Title="Angle Arc A"/>
+        </x:Arguments>
+    </NavigationPage>
+
+        <NavigationPage Title="Angle Arc B">
+        <x:Arguments>
+            <local:ExplodedPieChartPage Title="Angle Arc B"/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
