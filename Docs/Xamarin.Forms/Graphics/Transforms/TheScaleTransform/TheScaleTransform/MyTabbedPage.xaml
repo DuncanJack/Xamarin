@@ -22,4 +22,10 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="Anisotropic Text">
+        <x:Arguments>
+            <local:AnisotropicTextPage Title="Anisotropic Text"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
